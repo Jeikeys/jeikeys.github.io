@@ -16,7 +16,7 @@ body.dark {
   min-height: 100vh;
 }
 
-/* NAME */
+/* NAME PANEL */
 .itsme {
   flex: 1;
   padding: 80px;
@@ -34,11 +34,44 @@ body.dark .itsme {
   color: black;
 }
 
+.myname {
+  font-size:x-large;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+body.dark .myname {
+  color: black;
+}
+
+.myname:hover {
+  color: rgb(49, 49, 255);
+}
+
+body.dark .myname:hover {
+  color: blue;
+}
+
+.linkedinprofile {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background: rgb(42, 149, 243);
+  object-fit: cover;
+  border-radius: 40%;
+}
+
 .projects {
   flex: 2;
   padding: 80px;
 }
 
+.titleproj{
+  justify-self: center;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -56,7 +89,7 @@ body.dark .itsme {
   border: 1px solid #333333;
 }
 
-body.dark .card{
+body.dark .card {
   background: rgb(218, 218, 218);
   color: black;
 }
@@ -79,7 +112,7 @@ body.dark .card{
   background: #1a1a1a;
 }
 
-body.dark .toggle-btn{
+body.dark .toggle-btn {
   transform: scale(1.1);
   background: rgb(222, 222, 222);
 }
@@ -89,7 +122,8 @@ body.dark .toggle-btn{
     flex-direction: column;
   }
 
-  .itsme, .projects {
+  .itsme,
+  .projects {
     padding: 40px;
   }
 }
