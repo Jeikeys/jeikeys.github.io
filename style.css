@@ -54,7 +54,7 @@ body.dark .myname:hover {
 }
 
 .linkedinprofile {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   left: 20px;
   width: 50px;
@@ -101,7 +101,7 @@ body.dark .card {
 
 /* theme toggle */
 .toggle-btn {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   width: 48px;
